@@ -1,0 +1,134 @@
+body {
+  background-image: url('https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=867&q=80.jpg');
+  /* background-image: url('https://s01.sgp1.cdn.digitaloceanspaces.com/article/155172-zsvkqoaioz-1613806690.jpg'); */
+  /* background-image: url('https://www.cricketcountry.com/wp-content/uploads/2017/06/Lords-Getty-Images.jpg'); */
+/* background-image: url('https://australia.rugby/-/media/news/2018/04/180414-waratahs-reds-scg.jpg?h=643&la=en&mw=964&w=964&hash=1D6E53A656BC558D51E25B375F36DE57.jpg'); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.upperpart{
+    border-color: #000000;
+float: left;
+cursor: pointer;
+margin-left: 2cm;
+margin-right: 1cm;
+padding-right: 1cm;
+ }
+ .upperpart:hover {
+  /* background-color :rgb(30, 135, 153); */
+  opacity:.6;
+}
+
+ .div1{
+width: 214ch;
+position: absolute;
+margin-left: 63px;
+/* background-color: rgb(30, 135, 153); */
+background-color: rgb(64 88 151);
+border-style: solid;
+border-radius: 0.5cm;
+}
+.button{
+  float: right;
+  padding-right: 1cm;
+  height: 20px;
+}
+
+.signbutton {
+  position:fixed;
+  bottom: 0.3cm;
+  width: 4cm;
+  height: 46px;
+  right: 1cm;
+  border: 2px solid #0c57e0d9;
+  background-color: rgb(10, 177, 219);
+  background-color: rgb(64 88 151);
+cursor: pointer;  
+float: right;
+}
+.signbutton:hover {
+  transition-property: width,height,transform,font-size,opacity;
+  transition-duration: 1s,1s,1s,1s,1s,1s;
+  border-radius: 10px;
+  opacity: .6;
+  color:white;
+  border: 2px black;
+  
+}
+
+#RCB{
+ 
+  background-image: url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313418.logo.png);
+ }
+ #MI{
+    
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/317900/317995.png);
+    
+    }
+ #CSK{
+     
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313421.logo.png);   
+ }
+    #KXIP{
+     background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/317000/317003.png);
+    }
+    #SRH{
+    
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313480.logo.png);
+    }
+    #KKR{
+  
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313419.logo.png);
+    
+    }
+    #DC{
+   
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313422.logo.png);
+  
+    }
+    #RR{
+ 
+    background-image:url(https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/313400/313423.logo.png);
+    
+    }
+ #iplteams{ 
+    color: black;
+    padding-left: 300px;
+    
+ 
+ }
+ .font {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+ }
+ 
+ .fontsizeofteams {
+    font-size: x-large;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-style: inherit;
+    padding-left: 150px;
+    color: black;
+    border: 2px #1a336559;
+     border-style:solid;
+    height: 100px;
+    width: 400px;
+    background-repeat: repeat-y;
+cursor: pointer;
+}
+.fontsizeofteams:hover {
+  opacity:1;
+}
+
+ 
+ .tablefornames {
+    border: 2px solid #7893c5;
+margin-top: 20px;
+ }
+ .tabpos{
+   margin: 63px;
+   position: absolute;
+   margin-left: 84px;
+ }
