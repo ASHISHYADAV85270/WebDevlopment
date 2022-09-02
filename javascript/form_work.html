@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="">
+<label for=""  >FIRST_NAME---</label><input  id="fname" type="text" onfocus="color(this)" onblur="change(this)">
+<br><br>
+<label for=""  >LAST_NAME---</label><input type="text" onfocus="color(this)" onblur="change(this)">
+<br><br>
+<label for="">MOBILE---</label><input type="number" onfocus="color(this)" onblur="change(this)">
+<br><br>
+<label for="">GENDER</label>
+<select name="" id="" onfocus="color(this)" onblur="change(this)">
+<option value="MALE">MALE</option>
+<option value="FEMALE">FEMALE</option>
+<option value="OTHERS">OTHERS</option>
+</select>
+ <br><br>
+ <input type="button" value="SUBMIT" > 
+ </form>
+ <script>
+
+function color(element)
+{
+element.style.background="lightblue";
+}
+function change(element)
+{
+element.style.background="";
+}
+ </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK AND CALENDAR</title>
+
+
+
+
+    <style>
+        .box {
+            border: 1px solid rgb(8, 194, 201);
+            color: rgb(247, 236, 236);
+            background-color: black;
+            box-sizing: border-box;
+            padding: 9px;
+            margin: 5px;
+            float: left;
+            clear: both;
+        }
+
+        .box:hover {
+            cursor: pointer;
+            border-radius: 6px;
+        }
+    </style>
+
+
+
+    <script>
+        function clock() {
+            var a = new Date();
+            var c = a.getHours() + " : " + a.getMinutes() + " : " + a.getSeconds();
+            document.write(c);
+        }
+        function DATE() {
+            var a = new Date();
+            var d = a.getDay();
+            var arr = ["sun", "mon", "tue", "wed", "thru", "fri", "sat"];
+            var c = arr[d] + " : " + a.getDate() + " : " + a.getMonth() + " : " + a.getFullYear();
+            document.write(c);
+        }
+        var count = 0;
+        function hello() {
+            if (count == 0) {
+                alert("CLICK ON THIS BUTTON TOO SEE THE MAGIC");
+                count++;
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <h1>HELLO THIS IS OUR CLOCK</h1>
+    <button class="box" onclick="clock()" onmouseenter="hello()">CLOCK</button>
+
+    <button class="box" onclick="DATE()" onmouseenter="hello()">CALENDAR</button>
+</body>
+
+</html>

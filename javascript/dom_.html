@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript HTML DOM</h2>
+
+    <p>Hello World!</p>
+
+    <p>Hello Norway!</p>
+
+    <p>Click the button to change the color of all p elements.</p>
+    <p> lorem dsdas dasda ffwfa afsdfsd fa ffasfsasfafad afasfasf sd elements.</p>
+    <p>HELLO ASHISH </p>
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            const myCollection = document.getElementsByTagName("p");
+            for (let i = 0; i < myCollection.length; i++) {
+                if (i % 2 == 0) { myCollection[i].style.color = "red"; }
+                else {
+                    myCollection[i].style.color = "blue";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

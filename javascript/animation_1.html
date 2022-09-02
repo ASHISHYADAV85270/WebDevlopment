@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        #box {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background: crimson;
+            box-decoration:red dotted ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <br><br>
+    <button class="start" onclick="move()" style="margin-right: 40px;">START </button>
+
+    <button class="stop" onclick="stop()">STOP </button>
+    <script>
+        var a = 10, b;
+        function move(element) {
+            b = setInterval(anim, 300);
+        }
+        function anim() {
+            document.getElementById("box").style.marginLeft = a + 'px';
+            a = a + 40;
+        }
+        function stop() {
+            clearInterval(b);
+
+           
+           
+            var obj =
+
+            {
+
+                length: 20,
+
+                height: 35,
+
+            }
+
+            if ('breadth' in obj === false) {
+
+                obj.breadth = 12;
+
+            }
+
+            console.log(obj.breadth);
+        }
+    </script>
+    <A HREF = "default.html#test">Test Link</A>
+    <A HREF = "/sql/default.html">Test Link</A>
+</body>
+
+</html>

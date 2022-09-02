@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR_IN_LOOP</title>
+</head>
+
+<body>
+    <script>
+        //object inside a object
+        var abc = {
+            fname: "ashish",
+            lname: "yadav",
+            age: 18,
+            gender: 'male',
+        };
+        // document.write(a.region.city);
+
+        for (var key in abc) {
+            document.write(key + " : "+ abc[key] + "<br>");
+        }
+    </script>
+
+</body>
+
+</html>

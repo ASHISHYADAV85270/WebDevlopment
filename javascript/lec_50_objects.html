@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+</head>
+
+<body>
+    <!-- <script>
+        var a = {
+            fname: "ashish",
+            lname: "yadav",
+            age: 20,
+            gender: "male",
+            lang : ["html","css","javascript"],
+            fullname : function()
+            { return this.fname+  this.lname},
+        };
+ console.log(a);
+ document.write(a +"<br>");// it will give object object as output
+ document.write(a.age + "<br>");
+ document.write(a.fullname() + "<br>");
+    </script> -->
+
+    <!-- 
+
+<script>
+    //object inside a object
+    var a = {
+            fname: "ashish",
+            lname: "yadav",
+            region:{
+                city :"moradabad",
+                state: "UP",
+                country:"INDIA",
+            }
+       
+        };
+        document.write(a.region.city);
+</script> -->
+
+    <!-- <script>
+    //object inside a object
+ var a= new Object();
+ a.fname="ashish";
+ a.lname="yadav";
+        document.write(a.fname +" "+a.lname);
+</script> -->
+
+
+    <script>
+
+
+        // how to create a object
+        //constructor function
+        // function Person(firstname, lastname, age) {
+        //     this.firstname = firstname;
+        //     this.lastname = lastname;
+        //     this.age = age;
+
+        //     //they can be declared outside also with the help of prototype function
+        //     //because andr bnanai sai fucntion object kai andr hi dhik rha hai 
+        //     // this.getfullname = () => {
+        //     //     return `${this.firstname}   ${this.lastname}`;
+        //     // }
+        //     // this.calage = () => {
+        //     //     if (this.age >= 18) {
+        //     //         return `your age is ${this.age} and you are verified ${this.firstname} ${this.lastname}`;
+        //     //     }
+        //     //     else {
+        //     //         return `please wait for 18 ++  ${this.firstname} ${this.lastname}`;
+        //     //     }
+        //     // }
+        // }
+
+
+        //esse krnai sai function prototype kai andr nhi aaygaa
+        // Person.prototype.getfullname = () => {
+        //     return `${this.firstname}   ${this.lastname}`;
+        // }
+        // Person.prototype.calage = () => {
+        //     if (this.age >= 18) {
+        //         return `your age is ${this.age} and you are verified ${this.firstname} ${this.lastname}`;
+        //     }
+        //     else {
+        //         return `please wait for 18 ++  ${this.firstname} ${this.lastname}`;
+        //     }
+        // }
+
+
+        //best method is make class
+        class Person {
+            constructor(firstname, lastname, age) {
+                this.firstname = firstname;
+                this.lastname = lastname;
+                this.age = age;
+            }
+            getfullname() {
+                return `${this.firstname}   ${this.lastname}`;
+            }
+            calage() {
+                if (this.age >= 18) {
+                    return `your age is ${this.age} and you are verified ${this.firstname} ${this.lastname}`;
+                }
+                else {
+                    return `please wait for 18 ++  ${this.firstname} ${this.lastname}`;
+                }
+            }
+        }
+
+        //instantanious object 
+        const P = new Person('ASHISH', 'YADAV', 20);
+        const Q = new Person('APARNA', 'SHARMA', 10);
+        // console.log(P.age);
+        // console.log(Q.getfullname());
+        console.log(Q.calage());
+        console.log(P.calage());
+        console.log(Q);
+        console.log(P);
+    </script>
+</body>
+
+</html>

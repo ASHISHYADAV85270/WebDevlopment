@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX</title>
+    <link rel="stylesheet" href="flex_1.css">
+    <style>
+        .container 
+        {
+            background-color: gray;
+            width: 500px;
+            height: 550px;
+            margin: 20px auto 0 auto;
+
+
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+      /* align items jb use hota hai jb data wraped naa hoo mtlb jb single row hoo ...brna double mai hmlog  align content use krte hai ....aur agr kisi koo particularly value deni hoo too hmlog align self use  krte hai */
+
+        /* jitni jada order ki value choti hogi utni jldi boo aaaygaa aur bydefault boo value 0 hogi */
+        .item1 {
+            background-color: rgb(255, 111, 0);
+            order: 1;
+            align-self: auto;
+        }
+
+        .item2 {
+            background-color: rgb(30, 255, 0);
+            order: 3;
+            align-self: stretch;
+        }
+
+        .item3 {
+            background-color: rgb(17, 0, 255);
+            order: 2;
+            align-self: flex-start;
+        }
+
+        .item4 {
+            background-color: rgb(255, 0, 221);
+            order: -1;
+            align-self: flex-end;
+        }
+
+        .item5 {
+            background-color: rgb(255, 234, 0);
+        }
+
+        .item6 {
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item1">FIRST</div>
+        <div class="item item2">SECOND</div>
+        <div class="item item3">THREE</div>
+        <div class="item item4">FOUR</div>
+        <div class="item item5">FIVE</div>
+        <div class="item item6">SIX</div>
+    </div>
+</body>
+
+</html>

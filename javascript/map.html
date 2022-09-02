@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let detail = [
+            {
+                firName: 'ASHISH',
+                lastName: 'YADAV',
+                age: 20,
+            },
+            {
+                firName: 'KESHAV',
+                lastName: 'SHARMA',
+                age: 16,
+            },
+            {
+                firName: 'APPU',
+                lastName: 'TOM ',
+                age: 19,
+            },
+            {
+                firName: 'khus',
+                lastName: 'kinnnnar ',
+                age: 11,
+            },
+        ];
+        detail.forEach((toda) => { console.log(toda.age) });
+
+        let dataOfLast = detail.map((key) => { return key.lastName });
+        document.write(dataOfLast + '<br>');
+
+
+        let checkage = detail.filter((key) => { return key.age > 18 });
+        console.log(checkage);
+        let mature = detail.filter((key) => { return key.age > 18 }).map((l) => { return `${l.firName}  ${l.lastName}}` });
+        console.log(mature);
+
+    </script>
+</body>
+
+</html>

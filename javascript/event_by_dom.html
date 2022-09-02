@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLASS LIST</title>
+    <style>
+        .box {
+            margin: auto;
+            background-color: red;
+            height: 400px;
+            width: 400px;
+            margin-left: 350px;
+            margin-right: auto;
+
+        }
+
+        .box:hover {
+            cursor: pointer;
+        }
+
+        .abc {
+            background-color: royalblue;
+        }
+
+        .xyz {
+            background-color: slategray;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="box"> BOX 1 </button>
+    <button class="box"> BOX 2 </button>
+
+
+
+    <script>
+        // THIS IS FOR BOX 1
+        //dom implimenting events
+        document.querySelector(".box").onclick = changecolor;
+        var i = 0;
+        function changecolor() {
+            if (i == 0) {
+                document.querySelector(".box").classList.add("abc");
+                i++;
+            }
+            else if (i == 1) {
+                document.querySelector(".box").classList.add("xyz");
+                i++;
+            }
+
+            else if (i == 2) {
+                this.classList.remove("xyz");
+                i++;
+            }
+
+            else if (i == 3) {
+                this.classList.remove("abc");
+                i = 0;
+            }
+        }
+    </script>
+
+
+    <script>
+        var k = 0;
+        document.querySelectorAll(".box")[1].addEventListener("mouseenter", text);
+        function text() {
+            if(k % 2 == 0)
+             {
+                  document.querySelectorAll(".box")[0].innerHTML = "ODD";
+                  k++;
+             }
+             else
+             {
+                document.querySelectorAll(".box")[0].innerHTML = "EVEN";
+                k++;
+
+             }
+        }
+
+
+    </script>
+</body>
+
+</html>

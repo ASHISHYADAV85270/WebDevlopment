@@ -1,0 +1,16 @@
+
+h1{
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+}
+p{
+color: rgb(0, 255, 98);
+}
+.hello{
+    background-image: url('images/images2.jpg'), url('images/image1.jpg');
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-position: 10% 10%, 70% 80%;  /*x axis  y axis */
+    background-size: 30% 10%, 60% 70%; /*x axis  y axis */
+    /* background-size: cover;  this is also 100 100 but ismai pixel nhi faat tai */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUERY SELECTOR</title>
+</head>
+
+<body>
+    <div class="upp">
+
+        <h1>HELLO</h1>
+        <h1>ASHISH</h1>
+        <h1>YADAV</h1>
+    </div>
+
+    <ul>
+        <li>Lorem</li>
+        <li> ipsum.</li>
+        <li> ium.</li>
+        <li>Lopsum</li>
+    </ul>
+<button onclick="changetext()" style="background-color: red; color: white;">TRY IT</button>
+    <script>
+        //query selector bs phle element ko dhekega .............usmai () bracket mai .class #id tag attribute kuch bhi likh sktai hai............
+        //queryselectorall saare element ko dhekega .............usmai () bracket mai .class #id tag attribute kuch bhi likh sktai hai............
+       
+       
+       
+       
+       
+        // var data;
+        // data=document.querySelector("h1");
+        // console.log(data);
+
+
+        // data=document.querySelectorAll("h1");
+        // console.log(data);
+
+
+
+
+        function changetext()
+        {
+            var element;
+            element =document.querySelectorAll("h1")[2].innerHTML="YOU CHANGED IT BETA";
+            document.querySelectorAll("h1")[2].style.color="blue";
+            console.log(element);
+        }
+
+    </script>
+</body>
+
+</html>
